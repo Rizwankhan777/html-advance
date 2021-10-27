@@ -1,0 +1,138 @@
+<section class="testimonials-slider">
+<div class="container">
+<div class="row">
+<div class="col-12 text-center">
+<h2 class="testimonials-title">HERE’S WHAT OUR CUSTOMERS ARE SAYING ABOUT US</h2>
+</div>
+<div class="col-12">
+<div class="row d-flex justify-content-center">
+<div class="col-lg-6 col-md-10">
+<div id="myCarousel" class="carousel slide" data-ride="carousel" align="center">
+
+<ol class="carousel-indicators list-inline">
+<li class="list-inline-item active">
+<a id="carousel-selector-0" class="selected" data-slide-to="0" data-target="#myCarousel"> <img src="images/testimonials/testi-img-1.png" class="testimonials-img-select"> </a>
+</li>
+<li class="list-inline-item">
+<a id="carousel-selector-1" data-slide-to="1" data-target="#myCarousel"> <img src="images/testimonials/testi-img-2.png" class="testimonials-img-select"> </a>
+</li>
+<li class="list-inline-item">
+<a id="carousel-selector-2" data-slide-to="2" data-target="#myCarousel"> <img src="images/testimonials/testi-img-3.png" class="testimonials-img-select"> </a>
+</li>
+</ol>
+
+<div class="carousel-inner">
+<div class="carousel-item active">
+<div class="desc">
+<p>
+“Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has text ever sincea galley of type and scrambled it to make a type specimen book. ”
+</p>
+</div>
+<div class="name">
+<p>— Jack William</p>
+</div>
+</div>
+<div class="carousel-item">
+<div class="desc">
+<p>
+“Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has text ever sincea galley of type and scrambled it to make a type specimen book. ”
+</p>
+</div>
+<div class="name">
+<p>— Jack William</p>
+</div>
+</div>
+<div class="carousel-item">
+<div class="desc">
+<p>
+“Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has text ever sincea galley of type and scrambled it to make a type specimen book. ”
+</p>
+</div>
+<div class="name">
+<p>— Jack William</p>
+</div>
+</div>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-12 text-center">
+<div class="View_All_Signs">
+<a href="javascript:;">Add Reviews</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<style>
+
+/* testimonial start */
+/* --------------------------- */
+
+h2.testimonials-title {
+text-align: center;
+font: normal normal normal 45px/60px Universal Serif;
+letter-spacing: 1.57px;
+color: #35363A;
+text-transform: capitalize;
+opacity: 1;
+margin: 80px 0 25px;
+}
+
+.testimonials-slider {
+padding-bottom: 60px;
+}
+
+#myCarousel .desc {
+margin-bottom: 20px;
+}
+
+#myCarousel .name {
+font-size: 15px;
+color: rgb(51, 62, 72);
+font-weight: bold;
+margin-bottom: 30px;
+}
+
+#myCarousel .carousel-indicators {
+position: static;
+margin-bottom: 10rem;
+margin-top: 0px;
+}
+
+#myCarousel .carousel-indicators>li {
+width: 119px;
+margin-right: 60px;
+}
+
+#myCarousel .carousel-indicators li img {
+display: block;
+opacity: 0.5;
+width: 150px;
+height: 150px;
+}
+
+#myCarousel .carousel-indicators li.active img {
+opacity: 1;
+transform: scale(1.1);
+background: #35363a;
+padding: 15px;
+}
+
+#myCarousel .carousel-indicators li:hover img {
+opacity: 0.75
+}
+
+.testimonials-img-select {
+border-radius: 50%;
+border-radius: 50%;
+background-color: rgb(0, 0, 0);
+width: 57px;
+height: 58px;
+}
+
+/* testimonial close */
+</style>
