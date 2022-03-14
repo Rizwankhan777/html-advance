@@ -1,0 +1,23 @@
+html
+class="update-icon"
+
+#css
+
+.koichi-tanji-dashboard-links ul li a span.update-icon {
+	background: url(../images/group7.svg);
+	background-position: center;
+	background-repeat: no-repeat;
+	transition: 0.5s;
+	padding: 3px 15px;
+	background-size: cover;
+    margin: 0 25px 0 15px;
+
+}
+.koichi-tanji-dashboard-links ul li.active a span.update-icon, .koichi-tanji-dashboard-links ul li:hover a span.update-icon {
+	background: url(../images/group71.svg);
+	background-position: center;
+	background-repeat: no-repeat;
+	padding: 3px 15px;
+	background-size: cover;
+    margin: 0 25px 0 15px;
+}
