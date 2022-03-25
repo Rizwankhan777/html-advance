@@ -115,6 +115,32 @@
  
  
  
+.courses-video-section p a{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    padding: 8px 25px;
+    background-color: #fff;
+    border-radius: 4px;
+    z-index: 2;
+    text-align: left;
+    font-family: Work Sans;
+    font-weight: medium;
+    font-size: 35px;
+    line-height: 30px;
+    letter-spacing: 0px;
+    color: #222633;
+}
+.courses-video-section p i{
+    color: #94D82F;
+    padding-right: 10px;
+}
+.blur video{
+    opacity: 0.3;
+}
+ 
+ 
  
  #js
  
