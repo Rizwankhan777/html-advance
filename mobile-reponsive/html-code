@@ -1,0 +1,153 @@
+//html
+
+
+/* ************************************ */
+/*RESPONSIVE NAVIGATION*/
+.mobile-menu{
+   display: none;
+ background: #f38200;
+    padding: 5px 20px;}
+ .mobile-menu .circle {
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  color: #fff;
+  border-radius: 50%;
+  background: #594dff;
+  margin: 0 auto;
+  font-size: 20px;
+  position: absolute;
+  right: 15px;
+  top: 21px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+}
+.mobile-menu .mobile-cross {
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  color: #fff;
+  border-radius: 50%;
+  background: #594dff;
+  margin: 0 auto;
+  font-size: 16px;
+  position: fixed;
+  right: 4px;
+  top: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 99999;
+}
+.mobile-menu .nveMenu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 280px;
+  height: 100%;
+  background: #fff;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 999;
+  transform: translateX(-320px);
+  transition: all 0.5s cubic-bezier(0.7, 0, 0.3, 1);
+  padding: 40px 20px;
+}
+.mobile-menu .nveMenu.is-opened {
+  opacity: 1;
+  visibility: visible;
+  transform: translateX(0);
+}
+.mobile-menu .nveMenu h1 {
+  color: #000;
+  font-weight: 700;
+  }
+   .mobile-menu .overlay {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: calc(100% - 280px);
+    height: 100%;
+    background: rgba(0, 0, 0, 0.71);
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.5s cubic-bezier(0.7, 0, 0.3, 1);
+  }
+  .mobile-menu .overlay.is-on {
+    opacity: 1;
+    visibility: visible;
+    z-index: 999;
+  }
+  .mobile-menu .navlinks li {
+    display: block;
+    padding: 12px 0;
+  }
+  .mobile-menu .navlinks li a {
+    text-transform: uppercase;
+    color: #666;
+    font-weight: 700;
+  }
+  .mobile-menu .navlinks li a:hover {
+    text-decoration: none;
+  }
+  
+  .mobile-menu {
+    display: none;
+    background: #f38200;
+    padding: 5px 20px;
+}
+
+/* ************************************ */
+
+//js
+///////////////*****//////////////////
+// RESPONSIVE NAVIGATION
+// OPEN BTN
+  $(document).ready(function () {
+    $("#navbar").on("click", function() {
+      $(".nveMenu").addClass("is-opened");
+      $(".overlay").addClass("is-on");
+    });
+
+    $(".overlay").on("click", function() {
+      $(this).removeClass("is-on");
+      $(".nveMenu").removeClass("is-opened");
+    });
+  });
+// CLOSE BTN
+  $(".overlay").on("click", function() {
+    $(this).removeClass("is-on");
+    $(".nveMenu").removeClass("is-opened");
+  });
+
+  $(".close-btn-nav").click(function(){
+  $(".nveMenu").removeClass("is-opened");
+  $(".overlay").removeClass("is-on");
+  });
+  // RESPONSIVE NAVIGATION
+  // 
+  // ACTIVE JS START
+$(document).ready(function(){
+  $('ul li span').click(function(){
+    $('li span').removeClass("active-class");
+    $(this).addClass("active-class");
+});
+});
+  // ACTIVE JS END
+  // 
+  // PRELOADER START
+$(document).ready(function() {
+  setTimeout(function() {
+  $('.preloader').fadeOut('slow');
+            }, 2000);
+});
+  // PRELOADER END
+///////////////*****//////////////////
+
+
+min-width:768{
+display:block;
+}
