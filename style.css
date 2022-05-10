@@ -1,0 +1,237 @@
+@font-face {
+  font-family: HK Grotesk;
+  src: url("./fonts/HKGrotesk-Regular.otf");
+}
+
+.images-slider {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.image {
+  margin-bottom: 0px;
+  overflow: hidden;
+}
+.image:hover {
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  border: 1px solid #ffeef0;
+  border-radius: 20px;
+}
+
+.image img {
+  width: 263px;
+  height: 175px;
+  transition: 0.5s;
+}
+.image img:hover {
+  -webkit-transform: translate3d(0, 3%, 0) scale(1.3);
+  -moz-transform: translate3d(0, 3%, 0) scale(1.3);
+  -ms-transform: translate3d(0, 3%, 0) scale(1.3);
+  -o-transform: translate3d(0, 3%, 0) scale(1.3);
+  transform: translate3d(0, 3%, 0) scale(1.3);
+  border-radius: 20px;
+}
+
+.image.image-1 img {
+  border-radius: 20px;
+  width: 260px;
+  height: 260px;
+}
+
+.image.image-4 img {
+  border-radius: 20px;
+  width: 260px;
+  height: 255px;
+}
+
+.banner-section {
+  padding: 100px 0;
+}
+
+.banner-section .banner-content {
+  padding: 70px 0;
+}
+
+.banner-section .banner-content h3 {
+  /* position: absolute; */
+  -webkit-animation: colorchange 10s infinite alternate;
+  text-align: left;
+  font: normal normal bold 64px/58px HK Grotesk;
+  letter-spacing: -1.44px;
+  color: #1e1e1e;
+}
+
+.banner-section .banner-content h3 span {
+  text-align: left;
+  font: normal normal bold 72px/94px HK Grotesk;
+  letter-spacing: -1.44px;
+
+  color: #4646ee;
+}
+
+.banner-content p {
+  text-align: left;
+  font: normal normal normal 20px/28px HK Grotesk;
+  letter-spacing: 0px;
+  color: #6b6b6b;
+  opacity: 1;
+}
+
+.banner-link {
+  padding-top: 70px;
+}
+
+.banner-link a {
+  background: #ffcf31 0% 0% no-repeat padding-box;
+  border-radius: 12px;
+  text-align: center;
+  font: normal normal bold 16px/24px Titillium Web;
+  letter-spacing: 0px;
+  color: #4646ee;
+  padding: 15px 30px;
+  opacity: 1;
+}
+.link-1 {
+  position: absolute;
+  /* top: 10px; */
+  right: 19px;
+  bottom: 33px;
+}
+
+.image.image-1 {
+  position: relative;
+}
+.link-1 a {
+  text-decoration: none;
+
+  background: #ffcf31 0% 0% no-repeat padding-box;
+  border-radius: 8px;
+  text-align: center;
+  font: normal normal bold 14px/24px Titillium Web;
+  letter-spacing: 0px;
+  color: #4646ee;
+  padding: 12px 25px;
+  opacity: 1;
+}
+
+@-webkit-keyframes colorchange {
+  0% {
+    color: blue;
+  }
+
+  10% {
+    color: #8e44ad;
+  }
+
+  20% {
+    color: #1abc9c;
+  }
+
+  30% {
+    color: #d35400;
+  }
+
+  40% {
+    color: blue;
+  }
+
+  50% {
+    color: #ffcf31;
+  }
+
+  60% {
+    color: blue;
+  }
+
+  70% {
+    color: #f97000;
+  }
+  80% {
+    color: #ff0ae7;
+  }
+
+  90% {
+    color: #002944;
+  }
+
+  100% {
+    color: rgb(255, 0, 43);
+  }
+}
+
+.modal {
+  z-index: 1;
+  display: none;
+  padding-top: 10px;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.modal-content {
+  margin: auto;
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.modal-hover-opacity {
+  opacity: 1;
+  filter: alpha(opacity=100);
+  -webkit-backface-visibility: hidden;
+}
+
+.modal-hover-opacity:hover {
+  opacity: 0.6;
+  filter: alpha(opacity=60);
+  -webkit-backface-visibility: hidden;
+}
+
+.close {
+  text-decoration: none;
+  float: right;
+  font-size: 24px;
+  font-weight: bold;
+  color: white;
+}
+/* .container1 {
+    width:200px;
+    display:inline-block;
+    } */
+
+.modal-content,
+#caption {
+  -webkit-animation-name: zoom;
+  -webkit-animation-duration: 0.4s;
+  animation-name: zoom;
+  text-align: center;
+  animation-duration: 0.4s;
+}
+
+@-webkit-keyframes zoom {
+  from {
+    -webkit-transform: scale(0);
+  }
+  to {
+    -webkit-transform: scale(1);
+  }
+}
+
+@keyframes zoom {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
