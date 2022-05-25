@@ -1,0 +1,44 @@
+
+.box img{
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  transform-origin: bottom;
+ 
+}
+.bounce-1 img{
+    width: 11%;
+    animation-name: bounce-1;
+    animation-timing-function: linear;
+}
+@keyframes bounce-1 {
+  0%   { transform: translateY(0); }
+  50%  { transform: translateY(-30px); }
+  100% { transform: translateY(0); }
+}
+
+
+     @keyframes animate {
+            0% {
+                opacity: 0.1;
+            }
+  
+            50% {
+                opacity: 0.7;
+            }
+  
+            100% {
+                opacity: 0.1;
+            }
+        }
+        
+        
+    .list ul li{
+        
+         animation: animate */
+                2.5s linear infinite;
+}
+
+.desktop-header .red-btn{
+     animation: animate
+     2.5s linear infinite;
+    }
