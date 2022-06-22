@@ -1,0 +1,506 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span,
+ul,
+li,
+a,
+.btn-default,
+textarea {
+  margin: 0;
+  padding: 0;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+a:hover {
+  text-decoration: none;
+}
+a:focus {
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+}
+
+/* shash kay  */
+
+/* button {
+    background: linear-gradient(to left,#AD1115 50%, #fff 50%);
+    background-position: left bottom;
+    transition: all .6s ease-out;
+    background-size: 200% 100%;
+}
+button:hover{
+  background-position: right bottom;
+} */
+
+/* inner scroll side bar  */
+
+/* className::-webkit-scrollbar {
+	width: 4px;
+} */
+/* Track */
+
+/* className::-webkit-scrollbar-track {
+	background: #d4d4d4 ;
+} */
+/* Handle */
+
+/* className::-webkit-scrollbar-thumb {
+	background: #790101 ;
+} */
+/* Handle on hover */
+
+/* className::-webkit-scrollbar-thumb:hover {
+	background: #8b8b8b;
+}  */
+
+body {
+  background-color: #15161c;
+}
+
+/* font */
+@font-face {
+  font-family: Montserrat;
+  src: url("../fonts/Montserrat-Regular.ttf");
+}
+@font-face {
+  font-family: Aachenn;
+  src: url("../fonts/aachenn.ttf");
+}
+@font-face {
+  font-family: MyriadPro;
+  src: url("../fonts/MyriadPro-Regular.otf");
+}
+
+/* header */
+.main-header {
+  position: fixed;
+  width: 100%;
+  background-color: #101016;
+  top: 0;
+  z-index: 5;
+	transition:0.5s;
+}
+
+/* .main-header:hover{
+	background:transparent;
+} */
+
+
+
+.main-header .menu-1 {
+  display:
+  flex;
+  text-align: center;
+  padding: 44px 0;
+}
+
+
+.main-header .menu-2 {
+  display:
+  flex;
+  padding: 44px 0;
+}
+
+.main-header .menu-1 li , .menu-2 li{
+  padding: 0 10px;
+}
+
+.main-header .menu-1 li a , .menu-2 li a{
+  text-decoration: none;
+  font-family: Aachenn;
+  text-transform: uppercase;
+  font-size: 21.33px;
+  color: white;
+}
+
+
+.header-logo {
+  padding: 20px 0;
+}
+
+.banner{
+  background-image: url("../images/group-1/back.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 206px 0 125px 0;
+  background-blend-mode: overlay;
+  background-color: #2e2e34;  
+}
+
+.banner h1{
+  font-size: 66.67px;
+  font-family: Aachenn;
+  color: #e58f00;
+
+}
+
+.banner .banner-content p {
+  font-size: 25px;
+  font-family: Aachenn;
+  color: white;
+}
+
+.banner .banner-content .banner-btn {
+  padding: 30px 0;
+}
+.banner .banner-content .banner-btn a {
+  background-color: #e58f00;
+  font-size: 25px;
+  color: #28282d;
+  text-decoration: none;
+  padding: 13px 40px;
+  font-family: Aachenn;
+  border-radius: 5px;
+  transition:0.5s;
+  border:3px solid transparent;
+} 
+
+.banner .banner-content .banner-btn a:hover{
+  background:transparent;
+	border:3px solid #e58f00;
+	color:#fff;
+}
+
+.group-2{
+  padding: 50px 0 200px 0;
+}
+
+.group-2 .group-2-content h1 {
+  font-size: 50.02px;
+  color: white;
+  font-family: Aachenn;
+  margin: auto;
+  width: 81%;
+}
+
+.group-2 .group-2-content p{
+  font-size: 33.33px;
+  color: white;
+  font-family: Aachenn;
+  width: 81%;
+  margin: auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* group-2 */
+
+.group-2 {
+  padding: 50px 0 200px 0;
+}
+.group-2 .group-2-content h1 {
+  font-size: 50.02px;
+  color: white;
+  font-family: Aachenn;
+  margin: auto;
+  width: 81%;
+}
+.group-2 .group-2-content p {
+  font-size: 33.33px;
+  color: white;
+  font-family: Aachenn;
+  width: 81%;
+  margin: auto;
+}
+
+
+
+
+/* group-3 */
+
+.group-3 {
+  position:relative;
+}
+
+.group-3 .group-3-content {
+  position: absolute;
+  top: 393px;
+  left: 153px;
+  width: 50%;
+}
+
+.group-3 .group-3-content h1 {
+  font-family: Aachenn;
+  color: white;
+  font-size: 50.02px;
+  padding-bottom: 20px;
+}
+.group-3 .group-3-content p {
+  font-family: Aachenn;
+  color: white;
+  font-size: 33.33px;
+}
+
+
+img.img-1 {
+  position: absolute;
+  top: -156px;
+  right: 0;
+}
+img.img-2 {
+  position: absolute;
+  left: 0;
+  bottom: -28px;
+}
+
+img.img-3 {
+  position: absolute;
+  right: 0;
+  bottom: 6px;
+  height: 957px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* group-4 */
+.group-4 {
+  padding: 50px 0;
+}
+.group-4 .heading h1 {
+  font-size: 50.02px;
+  font-family: Aachenn;
+  color: white;
+  text-align: center;
+  padding: 100px 0;
+}
+
+.img-items a img{
+  transition: 0.5s;
+  border: 1px solid transparent;
+}
+.img-items a img:hover {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  transform: translateY(-8px);
+  border: 1px solid #fff;
+}
+
+
+.group-5{
+  margin: 50px 0;
+  background-image: url("../images/group-5/background.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 150px 0;
+}
+.group-5 .group-5-content {
+  width: 61%;
+  margin: auto;
+  padding: 60px 120px 60px 120px;
+  text-align: center;
+  border: 5px solid #fe9000;
+}
+.group-5 .group-5-content h1 {
+  font-size: 44.02px;
+  font-family: Aachenn;
+  color: white;
+  padding: 20px 0;
+}
+.group-5 .group-5-content p {
+  font-size: 25.33px;
+  font-family: Aachenn;
+  color: white;
+}
+
+
+
+.group-6 .heading h1 {
+  font-size: 50.02px;
+  font-family: Aachenn;
+  color: white;
+  padding: 40px 0;
+  text-align: center;
+}
+.group-6 .group-6-items h2 {
+  font-size: 29.17px;
+  font-family: Aachenn;
+  color: #e58f00;
+  padding: 10px 0;
+}
+.group-6 .group-6-items p {
+  font-size: 16.67px;
+  font-family: Aachenn;
+  color: white;
+  padding: 5px 0;
+}
+.group-6 .group-6-items h3 {
+  font-size: 25px;
+  font-family: Aachenn;
+  color: #e58f00;
+  padding: 20px 0;
+}  
+
+
+.group-7 {
+  margin: 120px 0;
+  background-color: #fe9000;
+  position: relative;
+  padding: 100px 0;
+}
+.group-7 .group-7-content h1 {
+  font-size: 50.02px;
+  font-family: Aachenn;
+  color: white;
+  padding: 10px 0;
+}
+.group-7 .group-7-content p {
+  font-size: 33.33px;
+  font-family: Aachenn;
+  color: white;
+}
+.group-7 .group-7-img img {
+  position: absolute;
+  top: -100px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* group-7 */
+.group-7 {
+  background-color: #fe9000;
+  position: relative;
+  padding: 100px 0;
+}
+.group-7 .group-7-content h1 {
+  font-size: 50.02px;
+  font-family: Aachenn;
+  color: white;
+  padding: 10px 0;
+}
+.group-7 .group-7-content p {
+  font-size: 33.33px;
+  font-family: Aachenn;
+  color: white;
+}
+.group-7 .group-7-img img {
+  position: absolute;
+  top: -100px;
+
+}
+.group-7 .group-7-img img:hover{
+	border:5px solid #fff;
+	border-radius:50%;
+}
+
+
+/* footer */
+
+.footer {
+  padding: 100px 0;
+  /* background-color: #323239; */
+}
+.footer-menu {
+  padding: 40px 0 20px 0;
+}
+.footer-menu ul {
+  display: flex;
+  justify-content: center;
+}
+.footer-menu ul li {
+  padding: 0 20px;
+}
+.footer-menu ul li a {
+  text-decoration: none;
+  /* color: white; */
+  font-size: 20.83px;
+  font-family: Montserrat;
+  color: white;
+}
+.footer-menu .social-icons {
+  padding-top: 40px;
+  text-align: center;
+}
+.footer-menu .social-icons .pin-1 {
+	background-color: white;
+	color: #323239;
+	padding: 10px 12px;
+	font-size: 20px;
+	border-radius: 50%;
+  }
+.footer-menu .social-icons i{
+  color: #323239;
+  margin: 0 10px;
+  padding: 10px;
+  font-size: 20px;
+  background-color: white;
+  border-radius: 50%;
+}
