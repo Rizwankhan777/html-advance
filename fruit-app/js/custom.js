@@ -17,3 +17,14 @@ $('.owl-carousel').owlCarousel({
 })
 
 
+var selector = $('.owl-carousel');
+$('.my-next-button1').click(function() {
+  selector.trigger('next.owl.carousel');
+});
+
+$('.my-prev-button1').click(function() {
+  selector.trigger('prev.owl.carousel');
+});
+
+
+
