@@ -54,13 +54,14 @@ h1,h2,h3,h4,h5,h6,p{
     color: rgb(255, 255, 255);
     border: 1px solid transparent;
     text-decoration: none;
+    transition:0.5s;
 }
 
 .desktop-header button:hover {
-    border: 1px solid rgb(0, 0, 0);
+    border: 1px solid rgb(252, 93, 53);
     background-color: transparent;
     text-decoration: none;
-    color: rgb(0, 0, 0);
+    color:rgb(252, 93, 53);
 }
 
 .desktop-header i {
@@ -118,6 +119,7 @@ h1,h2,h3,h4,h5,h6,p{
     margin-left: 100px;
 }
 
+
 .item.item-2 img {
     height: 700px;
     width: 100%;
@@ -133,7 +135,7 @@ h1,h2,h3,h4,h5,h6,p{
 
 .item h1 {
     font-weight: 900;
-    font-size: 62px;
+    font-size: 50px;
 }
 
 .item p {
@@ -206,6 +208,160 @@ img.vert-move {
     display: inline-block;
     line-height: 1em;
 }
+
+
+
+
+
+
+
+
+
+
+
+.testimonial-section h1{
+    text-align: center;
+    font-size: 50px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 20px 0 50px;
+}
+
+.testimonial-section{
+    padding:50px 0;
+}
+.testimonial-body.two{
+    /* transform: scale(1.1); */
+    transform: translateY(-20px);
+    /* height: 330px; */
+
+}
+  .testimonial-body{
+    text-align: center;
+    padding: 20px 10px;
+    height: 300px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    /* border: 1px solid #fc5d35; */
+    border-radius: 5px;
+    transition: 0.4s;
+    cursor: pointer;
+  }
+
+.testimonial-body p{
+    width:70%;
+    margin:auto;
+    padding: 20px 0;
+}
+  .testimonial-body img{
+    border-radius: 50%;
+    border: 4px solid #fc5d35;
+    height: 100px;
+    width: 100px;
+    padding: 5px;
+  }
+  .testimonial-body:hover{
+    background-color: #fc5d35;
+    transform: translateY(-20px);
+    transform: scale(1.1);
+    color:#fff
+  }
+
+  .testimonial-body:hover img{
+    border-color: #fff;
+  }
+
+
+.background-image {
+    background-image: url('../images/tasty-image.png');
+    background-position: center;
+    background-repeat:no-repeat;
+    background-size: cover;
+    height: 500px;
+    text-align: center;
+}
+
+.background-image h1{
+    position: absolute;
+    color: #fff;
+    font-size: 60px;
+    /* margin: 50px 0; */
+    transform: translate(-50%,-50%);
+    left: 50%;
+    top: 50%;
+}
+
+
+button.btn-1 {
+    background: #fc5d35;
+    color: #fff;
+    padding: 8px 55px;
+    border:  2px solid transparent;
+    transition: 0.5s;
+}
+
+button.btn-1:hover{
+    border: 2px solid #fc5d35;
+    color: #fc5d35;
+    background-color: transparent;
+
+}
+.form-sec{
+    padding: 50px 0;
+    background-image: url('../images/orange-dish.png');
+    background-repeat: no-repeat;
+    background-position: right;
+    /* background-size: cover; */
+}
+
+
+
+.form-sec input{
+    border: none;
+    border-bottom: 1px solid #000;
+    border-radius: none !important;
+    height: 60px;
+
+
+}
+
+
+footer {
+    padding: 50px 0;
+}
+
+footer h5 a{
+    text-decoration: none;
+    color: #fc5d35;
+    font-size: 30px;   
+}
+footer .logo-img{
+    /* text-align: center; */
+}
+footer h5{
+    transition: 0.5s;
+}
+footer h6{
+    color: #fc5d35;
+    font-size: 20px;
+}
+footer h5 a:hover{
+    color: #000;
+    text-decoration: none;
+}
+
+footer h5:hover{
+    transform: translateY(-10px);
+}
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -445,4 +601,7 @@ span.my-prev-button1 {
         border-bottom: 1px solid black;
     }
 
- }
+}
+
+
+    
