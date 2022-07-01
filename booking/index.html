@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <title>Form</title>
+</head>
+
+<body>
+    <section class="form-section">
+        <div class="container1">
+            <div class="row background">
+                
+                <div class="col-12">
+                    <div class="form-title">
+                        <h1>Add New Booking</h1>
+                        <p>in less than 2 minutes</p>
+                    </div>
+                </div> 
+
+             <div class="col-12">
+                 <form action="" class="form-body">
+                    <div class="row">
+                    <div class="col-6">
+                                <h1>1. Journey Details</h1>
+                                <div class="row mb-3">
+                                    <div class="col-6">
+                                        <div class="form-check form-switch" id="toggle">
+                                            <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked">
+                                            <label class="form-check-label form-label" for="flexSwitchCheckChecked">Hire Chauffeur Per Hour</label>
+                                          </div>
+                                    </div>
+                                    <div class="col-4" id="box">
+                                        <select class="form-select" aria-label="Default select example">
+                                            <option selected>3Hours</option>
+                                            <option value="1">4Hours</option>
+                                            <option value="2">5Hours</option>
+                                            <option value="3">6Hours</option>
+                                        </select>
+                                    </div>
+
+                                </div>
+                                <div class="row mb-3">
+                                    <div class="col-6">
+                                        <div class="date-input">
+                                            <div class="input-group">
+                                                <span class="input-group-text" id="basic-addon1"><i class="fa-solid fa-calendar-days"></i></span>
+                                                <input type="date" class="form-control" placeholder="30/06/2022">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-3">
+                                        <select class="form-select" aria-label="Default select example">
+                                            <option selected>HH</option>
+                                            <option value="1">01</option>
+                                            <option value="2">02</option>
+                                            <option value="3">03</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-3">
+                                        <select class="form-select" aria-label="Default select example">
+                                            <option selected>MM</option>
+                                            <option value="1">01</option>
+                                            <option value="2">02</option>
+                                            <option value="3">03</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="row mb-3">
+                                    <div class="col-12">
+                                        <div class="input-group">
+                                            <span class="input-group-text" id="basic-addon1"><i class="fa-solid fa-map-pin"></i></span>
+                                            <input type="text" class="form-control" placeholder="Pick Up-Airport/Address">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row mb-3">
+                                    <div class="col-12">
+                                        <div class="input-group">
+                                            <span class="input-group-text" id="basic-addon1"> <i class="fa-solid fa-flag"></i>   </span>
+                                            <input type="text" class="form-control" placeholder="Drop Off-Airport/Address">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row mb-3">
+                                    <div class="col-6">
+                                        <div class="add-button">
+                                            <button><i class="fa-solid fa-plus"></i> Additional Stop</button>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 ">
+                                        <button type="button" class="search-route" data-bs-toggle="modal"
+                                            data-bs-target="#exampleModal"><i class="fa-solid fa-magnifying-glass"></i> See
+                                            Route</button>
+    
+    
+    
+                                        <!-- Modal -->
+                                        <div class="modal fade" id="exampleModal" tabindex="-1"
+                                            aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                            <div class="modal-dialog">
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <h5 class="modal-title" id="exampleModalLabel">Map</h5>
+                                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                            aria-label="Close"></button>
+                                                    </div>
+                                                    <div class="modal-body">
+                                                        <div class="mapouter"><div class="gmap_canvas"><iframe class="gmap_iframe" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=850&amp;height=305&amp;hl=en&amp;q=University of Oxford&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe><a href="https://www.kokagames.com/fnf-friday-night-funkin-mods/">FNF Mods</a></div><style>.mapouter{position:relative;text-align:right;width:850px;height:305px;}.gmap_canvas {overflow:hidden;background:none!important;width:850px;height:305px;}.gmap_iframe {width:850px!important;height:305px!important;}</style></div>
+                                                    </div>
+                                                    <div class="modal-footer">
+                                                        <button type="button" class="btn btn-secondary"
+                                                            data-bs-dismiss="modal">Close</button>
+                                                        <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+    
+                                    </div>
+                                </div>
+                                <div class="row  mb-3">
+                                    <div class="col-5">
+                                        <div class="form-check form-switch" id="toggle-re">
+                                            <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked" >
+                                            <label class="form-check-label form-label" for="flexSwitchCheckChecked">Return Journey</label>
+                                          </div>
+                                    </div>
+                                </div>
+                                <div class="row mb-3" >
+                                  <div class="col-12" id="box-re">
+                                    <div class="row">
+                                        <div class="col-6" >
+                                            <div class="date-input">
+                                                <div class="input-group">
+                                                    <span class="input-group-text" id="basic-addon1"><i class="fa-solid fa-calendar-days"></i></span>
+                                                    <input type="date" class="form-control" placeholder="30/06/2022">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-3">
+                                            <select class="form-select" aria-label="Default select example">
+                                                <option selected>HH</option>
+                                                <option value="1">01</option>
+                                                <option value="2">02</option>
+                                                <option value="3">03</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-3">
+                                            <select class="form-select" aria-label="Default select example">
+                                                <option selected>MM</option>
+                                                <option value="1">01</option>
+                                                <option value="2">02</option>
+                                                <option value="3">03</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="row mb-3 mt-5">
+                                    <h1>2. Vehicle Details</h1>
+                                    <div class="col-12">
+                                      <div class="input-group">
+                                        <span class="input-group-text" id="basic-addon1"><i class="fa-solid fa-car"></i></span>
+                                        <select class="form-select" aria-label="Default select example">
+                                            <option selected>Mercedes E class (Sedan)</option>
+                                            <option value="1">01</option>
+                                            <option value="2">02</option>
+                                            <option value="3">03</option>
+                                        </select>
+                                      </div>
+                                    </div>
+                                </div>
+                                <div class="row mb-3">
+                                    <div class="col-12">
+                                        
+                                        <div class="input-group">
+                                            <span class="input-group-text" id="basic-addon1"><i class="fa-solid fa-users"></i></span>
+                                            <select class="form-select" aria-label="Default select example">
+                                                <option selected>1 Passenger</option>
+                                                <option value="1">01</option>
+                                                <option value="2">02</option>
+                                                <option value="3">03</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row mb-3">
+                                    <div class="col-12">
+                                        <div class="input-group">
+                                            <span class="input-group-text" id="basic-addon1"><i class="fa-solid fa-chair"></i></span>
+                                            <select class="form-select" aria-label="Default select example">
+                                                <option selected>0 Child Seat</option>
+                                                <option value="1">01</option>
+                                                <option value="2">02</option>
+                                                <option value="3">03</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    
+                                    <div class="col-6">
+                                        <div class="input-group">
+                                            <span class="input-group-text" id="basic-addon1"><i class="fa-solid fa-briefcase"></i></span>
+                                            <select class="form-select" aria-label="Default select example">
+                                                <option selected>0 Small Luggage</option>
+                                                <option value="1">01</option>
+                                                <option value="2">02</option>
+                                                <option value="3">03</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        
+                                        <div class="input-group">
+                                            <span class="input-group-text" id="basic-addon1"><i class="fa-solid fa-suitcase"></i></span>
+                                            <select class="form-select" aria-label="Default select example">
+                                                <option selected>0 Check-in/Large </option>
+                                                <option value="1">01</option>
+                                                <option value="2">02</option>
+                                                <option value="3">03</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+    
+                        <div class="col-6">
+                            <h1>3. Passenger Details</h1>
+                            <div class="row mb-3">
+                                <div class="col-12">
+                                    <div class="input-group">
+                                        <span class="input-group-text" id="basic-addon1"><i class="fa-solid fa-user"></i></span>
+                                        <input type="text" class="form-control" placeholder="Passenger Name">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row mb-3">
+                                <div class="col-12">
+                                    <div class="input-group">
+                                        <span class="input-group-text" id="basic-addon1"><i class="fa-solid fa-envelope"></i></span>
+                                        <input type="text" class="form-control" placeholder="Email Address">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row mb-3">
+                                <div class="col-12">
+                                    <div class="input-group">
+                                        <span class="input-group-text" id="basic-addon1"><i class="fa-solid fa-phone"></i></span>
+                                        <input type="text" class="form-control" placeholder="Contact Number">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row mb-3">
+                                <div class="col-12">
+                                    <textarea name="" class="form-control" id="" cols="10" placeholder="Special Notes To Company & Driver" rows="4"></textarea>
+                                </div>
+                            </div>
+                            <div class="row mb-3">
+                                <div class="col-12">
+                                    <div class="form-check form-switch" id="toggle-up">
+                                        <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked" >
+                                        <label class="form-check-label form-label" for="flexSwitchCheckChecked">Upload a file (ex. Meeting sign or program)</label>
+                                      </div>
+                                </div>
+                            </div>
+                            <div class="row" id="box-up">
+                                <div class="col-6">
+                                    <input type="file" class="form-control">
+                                </div>
+                                <div class="col-6">
+                                    <label for="" style="color: white;" >allowed file formats: .jpg .jpeg .png .gif .pdf</label>
+                                </div>
+                            </div>
+                            <div class="row my-5">
+                                <div class="col-12">
+                                    <h2 class="form-price"><span>Price</span> €0.00</h2>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-8 mx-auto">
+                                    <div class="row">
+                                        <div class="col-8">
+                                            <input type="text" class="form-control" placeholder="Voucher Code">
+                                        </div>
+                                        <div class="col-4">
+                                            <button class="apply-btn">Apply</button>
+                                        </div>
+                                        <div class="col-12 text-center mt-3">
+                                            <p>Click "Apply" to update the voucher</p>
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row mb-3" >
+                                <h1>4. Select Payment Method</h1>
+                                <div class="col-12">
+                                    <div class="custom-container">
+                                        <div class="selector">
+                                            <div class="selecotr-item">
+                                                <input type="radio" id="radio1" name="selector" class="selector-item_radio" >
+                                                <label for="radio1" class="selector-item_label">Cash/card to drive</label>
+                                            </div>
+                                            <div class="selecotr-item">
+                                                <input type="radio" id="radio2" name="selector" class="selector-item_radio">
+                                                <label for="radio2" class="selector-item_label">CreditCard</label>
+                                            </div>
+                                            <div class="selecotr-item">
+                                                <input type="radio" id="radio3" name="selector" class="selector-item_radio">
+                                                <label for="radio3" class="selector-item_label">iDeal</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                      
+                 
+                    </div>
+                    <div class="row mt-3">
+                        <div class="col-12 text-center">
+                            <div class="form-footer">
+                                <button>Go to payment <i class="fa-solid fa-arrow-right"></i></button>
+                            <p>To confirm your booking</p>
+                            <p>This Order is subject to our <a href="">Terms and Conditions</a></p>
+                            <p>Additional charges may be applicable for any changes in route, waiting time, additional stops, address changes or vehicle changes</p>
+                            </div>
+                        </div>
+                    </div>
+                            </form>
+    
+             </div>
+                
+            </div>
+        </div>
+    </section>
+
+
+<script>
+
+$(document).ready(function() {
+    
+
+
+       $("#toggle").click(function() {
+     
+         $("#box").toggle();
+     });
+
+     $("#toggle-re").click(function() {
+         $("#box-re").toggle();
+     });
+
+     $("#toggle-up").click(function() {
+         $("#box-up").toggle();
+     });
+
+
+    });
+
+</script>
+
+
+</body>
+
+</html>
