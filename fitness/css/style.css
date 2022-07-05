@@ -1,0 +1,297 @@
+h1,h2,h3,h4,h5,h6,p,ul{
+    margin: 0;
+}
+.desktop-header {
+
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        z-index: 999;
+   
+}
+.desktop-header ul {
+    display: flex;
+    padding: 21px 0;
+    align-items: center;
+    justify-content: center;
+}
+
+.desktop-header ul li{
+    list-style: none;
+    padding: 20px;
+}
+
+.desktop-header ul li a{
+    font-size: 18px;
+    text-decoration: none;
+    color: #fff;
+}
+.desktop-header ul li a:hover{
+    border-bottom: 3px solid #fc5d35;
+    padding-bottom: 3px;
+    cursor: pointer;
+}
+
+.inputDiv {
+    position: relative;
+    padding-top: 10px;
+}
+.inputDiv i {
+    position: absolute;
+    top: 10px;
+    right: 35px;
+    color: #fc5d35;
+}
+
+.inputDiv input{
+    width: 80%;
+    border: none;
+    background-color: #f4f4f4;
+    border-bottom: 2px solid #000;
+}
+.inputMain{
+    padding-top: 32px;
+    float: right;
+}
+.inputMain button{
+    padding: 8px 30px;
+    color: #fff;
+    font-size: 18px;
+    border: 2px solid  transparent;
+    background-color: #ff4719;
+    transition: 0.5s;
+}
+
+.inputMain button:hover{
+    border: 2px solid #fc5d35;
+    color: #fc5d35;
+    background-color: transparent;
+}
+
+.logo-img{
+    background-image: url('../images/logo_bg.png.webp');
+    position: center;
+    width: 91px;
+    /* left: 10px; */
+    /* margin-right: 13px; */
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100px;
+}
+.logo-img img{
+    margin-left: 6px;
+}
+
+.banner{
+    background-image: url('../images/banner-3.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 668px;
+    position: relative;
+    top: 0px;
+    left: 0;
+}
+
+.banner-content{
+    padding: 180px 0;
+}
+.banner-content p{
+    line-height: 90px;
+    font-size: 20px;
+    color: #ff4719;
+/* color:#fff */
+}
+.banner-content p::after{
+    content: '';
+
+}
+
+.banner-content h1{
+    font-size: 100px;
+    line-height: 80px;
+    text-transform: uppercase;
+    font-weight: 700;
+
+color:#fff
+    
+}
+
+.banner-content h2{
+    font-size: 80px;
+    font-weight: 700;
+
+    text-transform: uppercase;
+    line-height: 80px;
+
+color:#fff
+    
+}
+
+
+
+.background-img{
+    background-image: url('../images/tasty-image.png');
+    height: 500px;
+    background-position: center;
+    background-size: cover;
+    margin: 50px 0;
+
+}
+
+
+.background-img h1{
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 80px;
+    color: #fff;
+    
+}
+
+
+
+.testimonial-card {
+    padding: 20px;
+    text-align: center;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    margin-bottom: 50px;
+    height: 300px;
+    transition: 0.5s;
+    border-radius: 5px;
+
+}
+
+.testimonial-card:hover , .testimonial-card.card-2:hover{
+    background-color: #fc5d35;
+    color: #fff;
+    transform: scale(1.1);
+}
+
+.testimonial-card.card-2{
+    transform: translateY(-20px);
+}
+
+.testimonial-card:hover img{
+    border: 5px solid #fff;
+
+
+}
+
+
+.testimonial-card img{
+    border-radius: 50%;
+    height: 80px;
+    width: 80px;
+    border: 5px solid #fc5d35;
+    padding: 5px;
+}
+.testimonial-card p{
+    margin: auto;
+    width: 80%;
+    padding: 10px 0;
+}
+.testimonial-card h4{
+    padding: 10px 0;
+}
+
+.form-section{
+    background-image:url('../images/orange-dish.png');
+    background-repeat:no-repeat;
+    background-position: right;
+    padding:50px 0;
+    margin:50px 0
+}
+.form-section h1{
+    padding:50px 0;
+    
+
+}
+
+.form-section input{
+    height: 50px;
+    border:none;
+    border-bottom:2px solid #000;
+}
+
+.form-section button{
+    padding:8px 30px;
+    background-color:#fc5d35;
+    color:#fff;
+    border:none;
+    margin:20px 0 0 0; 
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.mobile-header{
+    display: none;
+}
+
+
+
+@media (max-width: 768px){
+    .desktop-header{
+        display: none;
+    }
+    .mobile-header{
+        display: block;
+    }
+    .mobile-header-top{
+        display: flex;
+        justify-content: space-between;
+        padding: 10px 20px;
+        border-bottom: 1px solid #fc5d35;
+        align-items: center;
+    }
+    .mobile-header i{
+        color: #fc5d35;
+        font-size: 25px;
+    }
+    .mobile-header ul li{
+        list-style: none;
+        padding: 5px 0;
+    }
+    .mobile-header ul li a{
+        text-decoration: none;
+        color: #fc5d35;
+        font-size: 20px;
+    }
+    .mobile-links{
+        text-align: center;
+    }
+}
+
+
+
+
+
+
