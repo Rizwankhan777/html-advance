@@ -123,6 +123,9 @@
         <p>Working Hard In Order To Get Perfect Shape.</p>
         <h1>Fitloss</h1>
         <h2>Fitness Studio</h2>
+        <div class="banner-btn">
+          <a href="javscript:;">Start Course Today</a>
+        </div>
       </div>
       </div>
 
@@ -131,6 +134,61 @@
 
 </section>
   
+<section class="our-courses">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-10 mx-auto py-5 text-center main-heading">
+        <h1 >Our Popular Courses</h1>
+        <p>As You Pour The First Glass Of Your Favorite Chianti Or Chardonnay And Settle Into An Intimate Friday Evening.</p>
+      </div>
+      <div class="col-4">
+        <div class="course-card">
+          <div class="img-div">
+            <img src="./images/gym-2.jpg" class="img-fluid" alt="">
+          </div>
+          <div class="card-content">
+            <h2>Basic Body Building</h2>
+            <p>$140.00</p>
+          </div>
+          <p class="desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+          <div class="card-btn">
+            <a href="">Apply Course</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-4">
+        <div class="course-card">
+          <div class="img-div">
+            <img src="./images/banner-4.jpg" class="img-fluid" alt="">
+          </div>
+          <div class="card-content">
+            <h2>Intermediate Body Building</h2>
+            <p>$200.00</p>
+          </div>
+          <p class="desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+          <div class="card-btn">
+            <a href="">Apply Course</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-4">
+        <div class="course-card">
+          <div class="img-div">
+            <img src="./images/banner-5.jpg" class="img-fluid" alt="">
+          </div>
+          <div class="card-content">
+            <h2>Advanced Body Building</h2>
+            <p>$250.00</p>
+          </div>
+          <p class="desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+          <div class="card-btn">
+            <a href="">Apply Course</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
 <section>
   <div class="container-fluid">
@@ -148,17 +206,20 @@
 <section>
   <div class="container">
     <div class="row">
-      <div class="col-md-12">
-        <h1 class="text-center my-5">Testimonial</h1>
+      <div class="col-md-12 text-center py-5 testimonial-heading">
+        <h1 class="text-center my-5">What Customer’s Say About Us</h1>
+        <p>As You Pour The First Glass Of Your Favorite Chianti Or Chardonnay And Settle Into An
+          Intimate Friday Evening.</p>
       </div>
       <div class="col-4">
         <div class="testimonial-card">
           <div class="testimonial-img">
             <img src="./images/tetimo1.webp" alt="">
           </div>
+          <h4>Maria</h4>
+          <h6>Profesion</h6>
           <p>Motivation comes from working on things we care about</p>
-          <h4>Mria shyrel</h4>
-          <h6>Profeesion</h6>
+         
         </div>
       </div>
       <div class="col-4">
@@ -166,9 +227,10 @@
           <div class="testimonial-img">
             <img src="./images/testimo5.jpg" alt="">
           </div>
+          <h4>Mores</h4>
+          <h6>Profesion</h6>
           <p>Motivation comes from working on things we care about</p>
-          <h4>Sandberg shyrel</h4>
-          <h6>Profeesion</h6>
+       
         </div>
       </div>
       <div class="col-4">
@@ -176,9 +238,10 @@
           <div class="testimonial-img">
             <img src="./images/testimo2.jpg" alt="">
           </div>
+          <h4>John</h4>
+          <h6>Profesion</h6>
           <p>Motivation comes from working on things we care about</p>
-          <h4>David shyrel</h4>
-          <h6>Profeesion</h6>
+         
         </div>
       </div>
     </div>
@@ -212,123 +275,6 @@
 </section>
 
 
-
-<footer>
-  <div class="container">
-    <div class="row">
-      <div class="col-md-3">
-        <div class="logo-img">
-          <img src="./images/logo.png" class="img-fuild" alt="">
-          <h6>FruitGala</h6>
-        </div>
-      </div>
-      <div class="col-md-3">
-        <h5><a href="">Fruits</a></h5>
-      </div>
-      <div class="col-md-3">
-        <h5><a href="">Services</a></h5>
-      </div>
-      <div class="col-md-3">
-        <h5><a href="">Contact</a></h5>
-      </div>
-    </div>
-  </div>
-</footer>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- <script>
-        // Wrap every letter in a span
-var textWrapper = document.querySelector('.ml2');
-textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
-
-anime.timeline({loop: true})
-  .add({
-    targets: '.ml2 .letter',
-    scale: [4,1],
-    opacity: [0,1],
-    translateZ: 0,
-    easing: "easeOutExpo",
-    duration: 950,
-    delay: (el, i) => 70*i
-  }).add({
-    targets: '.ml2',
-    opacity: 1,
-    duration: 1000,
-    easing: "easeOutExpo",
-    delay: 1000
-  });
-
-
-
-
-
-
-
-
-
-
- // Wrap every letter in a span
- var textWrapper = document.querySelector('.ml1');
-textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
-
-anime.timeline({loop: true})
-  .add({
-    targets: '.ml1 .letter',
-    scale: [4,1],
-    opacity: [0,1],
-    translateZ: 0,
-    easing: "easeOutExpo",
-    duration: 950,
-    delay: (el, i) => 70*i
-  }).add({
-    targets: '.ml1',
-    opacity: 1,
-    duration: 1000,
-    easing: "easeOutExpo",
-    delay: 1000
-  });
- // Wrap every letter in a span
- var textWrapper = document.querySelector('.ml3');
-textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
-
-anime.timeline({loop: true})
-  .add({
-    targets: '.ml3 .letter',
-    scale: [4,1],
-    opacity: [0,1],
-    translateZ: 0,
-    easing: "easeOutExpo",
-    duration: 950,
-    delay: (el, i) => 70*i
-  }).add({
-    targets: '.ml3',
-    opacity: 1,
-    duration: 1000,
-    easing: "easeOutExpo",
-    delay: 1000
-  });
-    </script> -->
-   
    
     <script src="./js/jquery-3.3.1.min.js"></script>
     <script src="./js/owl.carousel.js"></script>
