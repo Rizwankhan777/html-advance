@@ -4,13 +4,13 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./css/owl.carousel.min.css" />
-    <link rel="stylesheet" href="./css/owl.theme.default.min.css" />
-    <link rel="stylesheet" href="./css/docs.theme.min.css" />
- 
-    <link rel="stylesheet" href="./css/bootstrap.min.css">
-   <script src="js/bootstrap.bundle.min.js"></script>
-  
+
+    <!-- <link rel="stylesheet" href="./css/docs.theme.min.css" /> -->
+
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="./js/jquery-3.3.1.min.js"></script>
+
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
@@ -19,266 +19,382 @@
       referrerpolicy="no-referrer"
     />
 
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-    crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
-    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-    crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
-    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-    crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
-    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
-
     <link rel="stylesheet" href="./css/style.css" />
 
     <title>Fitnesss CLub</title>
   </head>
   <body>
-
     <header>
-    <div class="mobile-header">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12 mobile-header-top">
-            <div>
-              <img src="./images/logo.png" class="img-fluid" alt="">
-            </div>
-            <div data-toggle="collapse" href="#collapseExample" type="button"  role="button" aria-expanded="false" aria-controls="collapseExample">
-              <i class="fa-solid fa-bars"></i>
-            </div>
-          </div>
-          <div class="col-md-6 mx-auto collapse mobile-links" id="collapseExample">
-            <ul>
-              <li><a href="">HOme</a></li>
-              <li><a href="">Fruits</a></li>
-              <li><a href="">Services</a></li>
-              <li><a href="">Contact Us</a></li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
-    
-      <!-- <div class="mobile-header">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-12 mobile-header-top">
-              <div>
-                <img src="./images/logo.png" class="img-fluid" alt="">
-              </div>
-              <div data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
-                <i class="fa-solid fa-bars"></i>
-              </div>
-            </div>
-
-            <div class="col-md-6 collapse" id="collapseExample">
-              <ul>
-                <li><a href="">HOme</a></li>
-                <li><a href="">Fruits</a></li>
-                <li><a href="">Services</a></li>
-                <li><a href="">Contact Us</a></li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div> -->
-
-
-
-
       <div class="desktop-header">
         <div class="container">
           <div class="row">
-            <div class="col-md-2">
+            <div class="col-2">
               <div class="logo-img">
-                <img src="./images/logo.webp" class="img-fluid" alt="">
+                <img src="./images/logo.webp" class="img-fluid" alt="" />
               </div>
             </div>
-              <div class="col-md-7">
-                <ul>
-                  <li><a href="">Home</a></li>
-                  <li><a href="">About us</a></li>
-                  <li><a href="">Blog</a></li>
-                </ul>
-              </div>
-              <div class="col-md-3">
-              <div class="inputMain">
+            <div class="col-7">
+              <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">About us</a></li>
+                <li><a href="">Blog</a></li>
+              </ul>
+            </div>
+            <div class="col-3">
+              <div class="header-btn">
                 <button>+671 896 511 365</button>
               </div>
-              </div>
+            </div>
           </div>
         </div>
       </div>
     </header>
 
-<section class="banner">
-  <div class="container">
-    <div class="row">
-      <div class="offset-5 col-md-7 ">
-      <div class="banner-content">
-        <p>Working Hard In Order To Get Perfect Shape.</p>
-        <h1>Fitloss</h1>
-        <h2>Fitness Studio</h2>
-        <div class="banner-btn">
-          <a href="javscript:;">Start Course Today</a>
+    <section class="banner">
+      <div class="container">
+        <div class="row">
+          <div class="offset-5 col-md-7">
+            <div class="banner-content">
+              <p>Working Hard In Order To Get Perfect Shape.</p>
+              <h1>Fitloss</h1>
+              <h2>Fitness Studio</h2>
+              <div class="banner-btn">
+                <a href="javscript:;">Start Course Today</a>
+              </div>
+              <div class="timer-img">
+                <img src="./images/timer.png" class="img-fluid" alt="" />
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-      </div>
+    </section>
 
-    </div>
-  </div>
+    <section class="our-courses">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-10 mx-auto py-5 text-center main-heading">
+            <h1>Our Popular Courses</h1>
+            <p>
+              As You Pour The First Glass Of Your Favorite Chianti Or Chardonnay
+              And Settle Into An Intimate Friday Evening.
+            </p>
+          </div>
+          <div class="col-4">
+            <div class="course-card">
+              <div class="img-div">
+                <img src="./images/gym-2.jpg" class="img-fluid" alt="" />
+              </div>
+              <div class="card-content">
+                <h2>Basic Body Building</h2>
+                <p>$140.00</p>
+              </div>
+              <p class="desc">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam.
+              </p>
+              <div class="card-btn">
+                <a href="">Apply Course</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="course-card">
+              <div class="img-div">
+                <img src="./images/banner-4.jpg" class="img-fluid" alt="" />
+              </div>
+              <div class="card-content">
+                <h2>Intermediate Body Building</h2>
+                <p>$200.00</p>
+              </div>
+              <p class="desc">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam.
+              </p>
+              <div class="card-btn">
+                <a href="">Apply Course</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="course-card">
+              <div class="img-div">
+                <img src="./images/banner-5.jpg" class="img-fluid" alt="" />
+              </div>
+              <div class="card-content">
+                <h2>Advanced Body Building</h2>
+                <p>$250.00</p>
+              </div>
+              <p class="desc">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam.
+              </p>
+              <div class="card-btn">
+                <a href="">Apply Course</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-</section>
-  
-<section class="our-courses">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-10 mx-auto py-5 text-center main-heading">
-        <h1 >Our Popular Courses</h1>
-        <p>As You Pour The First Glass Of Your Favorite Chianti Or Chardonnay And Settle Into An Intimate Friday Evening.</p>
-      </div>
-      <div class="col-4">
-        <div class="course-card">
-          <div class="img-div">
-            <img src="./images/gym-2.jpg" class="img-fluid" alt="">
+    <section class="table-section">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-5">
+            <img src="./images/body-1.jpg" class="img-fluid" alt="" />
           </div>
-          <div class="card-content">
-            <h2>Basic Body Building</h2>
-            <p>$140.00</p>
-          </div>
-          <p class="desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
-          <div class="card-btn">
-            <a href="">Apply Course</a>
-          </div>
-        </div>
-      </div>
-      <div class="col-4">
-        <div class="course-card">
-          <div class="img-div">
-            <img src="./images/banner-4.jpg" class="img-fluid" alt="">
-          </div>
-          <div class="card-content">
-            <h2>Intermediate Body Building</h2>
-            <p>$200.00</p>
-          </div>
-          <p class="desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
-          <div class="card-btn">
-            <a href="">Apply Course</a>
-          </div>
-        </div>
-      </div>
-      <div class="col-4">
-        <div class="course-card">
-          <div class="img-div">
-            <img src="./images/banner-5.jpg" class="img-fluid" alt="">
-          </div>
-          <div class="card-content">
-            <h2>Advanced Body Building</h2>
-            <p>$250.00</p>
-          </div>
-          <p class="desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
-          <div class="card-btn">
-            <a href="">Apply Course</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
+          <div class="col-7">
+            <h1>Get Your Schedule</h1>
+            <p>
+              As you pour the first glass of your favorite Chianti or Chardonnay
+              and settle into an intimate Friday evening.
+            </p>
 
-<section>
-  <div class="container-fluid">
-    <div class="row">
-      <div class="col-md-12">
-        <div class="background-img">
-          <h1>Tasty Fruits</h1>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-
-<section>
-  <div class="container">
-    <div class="row">
-      <div class="col-md-12 text-center py-5 testimonial-heading">
-        <h1 class="text-center my-5">What Customer’s Say About Us</h1>
-        <p>As You Pour The First Glass Of Your Favorite Chianti Or Chardonnay And Settle Into An
-          Intimate Friday Evening.</p>
-      </div>
-      <div class="col-4">
-        <div class="testimonial-card">
-          <div class="testimonial-img">
-            <img src="./images/tetimo1.webp" alt="">
+            <table class="table table-striped">
+              <thead>
+                <tr>
+                  <th scope="col">Courses Name</th>
+                  <th scope="col">Mon</th>
+                  <th scope="col">Tue</th>
+                  <th scope="col">Wed</th>
+                  <th scope="col">Thu</th>
+                  <th scope="col">Fri</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                    <th scope="row">Fitness Aere</th>
+                    <td>02:00</td>
+                    <td>10:10</td>
+                    <td>02:10</td>
+                    <td>02:00</td>
+                    <td>10:10</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Fitness Aere</th>
+                    <td>02:00</td>
+                    <td>10:10</td>
+                    <td>02:10</td>
+                    <td>02:00</td>
+                    <td>10:10</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Fitness Aere</th>
+                    <td>02:00</td>
+                    <td>10:10</td>
+                    <td>02:10</td>
+                    <td>02:00</td>
+                    <td>10:10</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Fitness Aere</th>
+                    <td>02:00</td>
+                    <td>10:10</td>
+                    <td>02:10</td>
+                    <td>02:00</td>
+                    <td>10:10</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Fitness Aere</th>
+                    <td>02:00</td>
+                    <td>10:10</td>
+                    <td>02:10</td>
+                    <td>02:00</td>
+                    <td>10:10</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Fitness Aere</th>
+                    <td>02:00</td>
+                    <td>10:10</td>
+                    <td>02:10</td>
+                    <td>02:00</td>
+                    <td>10:10</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Fitness Aere</th>
+                    <td>02:00</td>
+                    <td>10:10</td>
+                    <td>02:10</td>
+                    <td>02:00</td>
+                    <td>10:10</td>
+                  </tr>
+              </tbody>
+            </table>
           </div>
-          <h4>Maria</h4>
-          <h6>Profesion</h6>
-          <p>Motivation comes from working on things we care about</p>
-         
         </div>
       </div>
-      <div class="col-4">
-        <div class="testimonial-card card-2">
-          <div class="testimonial-img">
-            <img src="./images/testimo5.jpg" alt="">
-          </div>
-          <h4>Mores</h4>
-          <h6>Profesion</h6>
-          <p>Motivation comes from working on things we care about</p>
-       
-        </div>
-      </div>
-      <div class="col-4">
-        <div class="testimonial-card">
-          <div class="testimonial-img">
-            <img src="./images/testimo2.jpg" alt="">
-          </div>
-          <h4>John</h4>
-          <h6>Profesion</h6>
-          <p>Motivation comes from working on things we care about</p>
-         
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="form-section">
-  <div class="container">
-    <div class="row">
-      <div class="col-12">
-      <h1 class="text-center">CONTACT US</h1>
-      </div>
-     <div class="col-md-6">
-      <form action="">
-        <div class="form-group">
-          <input type="text" class="form-control" placeholder="First Name">
-        </div>
-        <div class="form-group">
-          <input type="text" class="form-control" placeholder="Email">
-        </div>
-        <div class="form-group">
-         <input type="text" class="form-control" placeholder="message">
-        </div>
-        <div>
-          <button class="form-btn">Submit</button>
-        </div>
-      </form>
-     </div>
-    </div>
-  </div>
-</section>
+    </section>
 
 
-   
-    <script src="./js/jquery-3.3.1.min.js"></script>
-    <script src="./js/owl.carousel.js"></script>
-    <script src="./js/custom.js"></script>
+    <section class="collect-img">
+        <div class="container-fluid ">
+      
+          <div class="row ">
+            <div class="text-center py-5 col-12">
+              <h1 style="font-family: 'play-Regular';">Gallery Photos</h1>
+            </div>
+            <div class="col-md-6 p-0">
+              <img src="./images/body-9.webp" style="height: 400px;" class="img-fluid" alt="">
+            </div>
+            <div class="col-md-6 pl-0">
+        <div class="main">
+          <div>
+            <img src="./images/body-2.jpg" class="img-fluid" alt="">
+          </div>
+          <div>
+            <img src="./images/banner-1.webp" class="img-fluid" alt="">
+          </div>
+          <div>
+            <img src="./images/body-3.jpg" class="img-fluid" alt="">
+          </div>
+          <div>
+            <img src="./images/body-5.jpg" class="img-fluid" alt="">
+          </div>
+        </div>
+        
+            </div>
+          </div>
+        </div>
+
+    </section>
+
+
+    <section class="third-wrap">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-md-12">
+             <div class="content">
+              <h1>Many more Features are Waiting!</h1>
+              <p>
+                Thinking about overseas adventure travel? Have you put any thought into the best places to go when it comes to overseas adventure travel?</p>
+                <a href="">Become A Member</a>
+             </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="fourth-section">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="offset-1 col-md-5 align-self-center">
+              <h1>We are Fitfloss. A Dedicated Fitness Center Since 2004</h1>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea voluptatum corporis, quasi accusantium, consequatur et debitis possimus veniam aliquam aliquid soluta? Harum eum vel velit laboriosam architecto aspernatur accusamus repudiandae commodi et labore amet obcaecati natus numquam quibusdam distinctio nostrum, iure saepe quasi in perferendis cum! Odio culpa necessitatibus illo.
+                laboriosam architecto aspernatur accusamus repudiandae commodi et labore amet obcaecati natus numquam quibusdam distinctio nostrum, iure saepe quasi in perferendis cum! Odio culpa necessitatibus illo.
+              </p>
+            </div>
+            <div class="col-md-6 pr-0">
+              <img src="./images/body-4.jpg" class="img-fluid" alt="">
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12 text-center py-5 testimonial-heading">
+              <h1 class="text-center my-5">What Customer’s Say About Us</h1>
+              <p>As You Pour The First Glass Of Your Favorite Chianti Or Chardonnay And Settle Into An
+                Intimate Friday Evening.</p>
+            </div>
+            <div class="col-4">
+              <div class="testimonial-card">
+                <div class="testimonial-img">
+                  <img src="./images/g-1.jpg" alt="">
+                </div>
+                <h4>Maria</h4>
+                <h6>Profesion</h6>
+                <p>Motivation comes from working on things we care about</p>
+               
+              </div>
+            </div>
+            <div class="col-4">
+              <div class="testimonial-card card-2">
+                <div class="testimonial-img">
+                  <img src="./images/g-2.jpg" alt="">
+                </div>
+                <h4>Annie</h4>
+                <h6>Profesion</h6>
+                <p>Motivation comes from working on things we care about</p>
+             
+              </div>
+            </div>
+            <div class="col-4">
+              <div class="testimonial-card">
+                <div class="testimonial-img">
+                  <img src="./images/g-3.jpg" alt="">
+                </div>
+                <h4>Jerish</h4>
+                <h6>Profesion</h6>
+                <p>Motivation comes from working on things we care about</p>
+               
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <footer>
+        <div class="container">
+         <div class="row">
+          <div class="col-md-3">
+            <h4>Contact Us</h4>
+            <p>+12 36 458 412</p>
+            <p>+12 45 768 412</p>
+          </div>
+          <div class="col-md-3">
+            <h4>About Us</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, nihil?</p>
+          </div>
+          <div class="col-6">
+            <h4>News Letter</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, adipisci.</p>
+            <div class="inputDiv">
+              <input type="text" placeholder="Email Adress ...">
+              <button>Subscribe <i class="fa-solid fa-arrow-right-long"></i></button>
+            </div>
+          </div>
+         </div>
+         <div class="row">
+        <div class="col-12 py-5">
+          <div class="footer-links">
+            <p>Copyright ©2022 All rights reserved | This template is made</p>
+          <div class="social-icons">
+            <i class="fa-brands fa-facebook-f"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-skype"></i>
+          </div>
+          </div>
+        </div>
+         </div>
+        </div>
+      </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
   </body>
 </html>
