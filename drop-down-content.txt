@@ -1,0 +1,72 @@
+//html
+      <li class="dropdown"><a class="dropbtn" href="">About us</a>
+                  <div class="dropdown-content">
+               <div class="div-flex">
+                     <ul>
+                      <li><a href=":;">dropdwon 1</a></li>
+                      <li><a href=":;">dropdwon 1</a></li>
+                      <li><a href=":;">dropdwon 1</a></li>
+                      <li><a href=":;">dropdwon 1</a></li>
+                    </ul>
+                     <ul>
+                      <li><a href=":;">dropdwon 1</a></li>
+                      <li><a href=":;">dropdwon 1</a></li>
+                      <li><a href=":;">dropdwon 1</a></li>
+                      <li><a href=":;">dropdwon 1</a></li>
+                    </ul>
+                     <ul>
+                      <li><a href=":;">dropdwon 1</a></li>
+                      <li><a href=":;">dropdwon 1</a></li>
+                      <li><a href=":;">dropdwon 1</a></li>
+                      <li><a href=":;">dropdwon 1</a></li>
+                    </ul>
+               </div>
+                  </div>
+                  </li>
+
+
+
+
+
+
+//css
+.dropdown{
+    position: relative;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-content{
+    transition: 0.5s;
+    position: absolute;
+    top: 50px;
+    left: -200%;
+    display:none
+}
+
+
+
+.div-flex{
+    width: 200%;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.div-flex ul{
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+.div-flex ul li a{
+    font-weight: 400;
+    font-size: 14px;
+} 
+
+
