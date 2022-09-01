@@ -1,0 +1,154 @@
+<section>
+<div id="sidebar">
+  <div class="social facebook">
+    <a href=" https://www.facebook.com " target="_blank">
+      <p><span>Facebook</span><i class="fa fa-facebook "></i> </p>
+    </a>
+  </div>
+  <div class="social twitter">
+    <a href=" https://www.twitter.com " target="_blank">
+      <p><span>&nbsp Twitter</span> <i class="fa fa-twitter"></i> </p>
+    </a>
+  </div>
+
+  <div class="social linkedin">
+    <a href=" https://www.linkedin.com " target="_blank">
+      <p> <span>&nbsp &nbsp LinkedIn</span> <i class="fa fa-linkedin"></i> </p>
+    </a>
+  </div>
+</div>
+</section>
+
+// css
+
+
+
+
+
+
+/* sidebar */
+
+
+#sidebar {
+  z-index: 9999;
+  height: 250px;
+  width: 10px;
+  top: 230px;
+  position: fixed;
+  text-align: center;
+  padding: 10px;
+  margin-left: 10px;
+}
+
+
+p i {
+  left: 30px;
+  position: relative;
+  vertical-align: middle;
+  text-align: center;
+  font-size: 24px;
+}
+
+.social {
+  margin-left: -139px;
+  width: 180px;
+  padding: 8px 18px 8px 5px;
+  margin-bottom: 15px;
+  border-top-right-radius: 15px;
+  display: inline-table;
+  border-bottom-right-radius: 15px;
+  height: 0px;
+  background-color: rgb(255 255 255 / 73%);
+  -ms-transition-duration: 0.2s;
+  -ms-transition-delay: 0.2s;
+  -o-transition-duration: 0.2s;
+  -o-transition-delay: 0.2s;
+  -webkit-transition-duration: 0.2s;
+  -webkit-transition-delay: 0.2s;
+  box-shadow: 0px 0px 6px 0px #3E3D3D;
+  cursor: pointer;
+}
+
+.social:hover {
+  margin-left: -30px;
+  width: 170px;
+  background-color: #3b5998;
+}
+.social a{
+  color: #fff;
+  text-decoration: none;
+}
+.facebook a {
+  text-decoration: none;
+}
+
+.facebook a i{
+  font-size: 14px;
+  color: #fff;
+  background-color: #1877F2;
+  text-decoration: none;
+  /* padding: 5px 10px; */
+  height: 22px;
+  width: 24px;
+  line-height: 23px;
+  border-radius: 50%;
+}
+/* .social p{
+  display: flex;
+  justify-content: space-around;
+} */
+
+
+
+.twitter a {
+  text-decoration: none;
+}
+
+.twitter a i{
+  font-size: 14px;
+  color: #fff;
+  background-color: #1DA1F2;
+  text-decoration: none;
+  /* padding: 5px 10px; */
+  height: 22px;
+  width: 24px;
+  line-height: 23px;
+  border-radius: 50%;
+}
+
+
+
+.linkedin a {
+  text-decoration: none;
+}
+
+.linkedin a i{
+  font-size: 14px;
+  color: #fff;
+  background-color: #0A66C2;
+  text-decoration: none;
+  /* padding: 5px 10px; */
+  height: 22px;
+  width: 24px;
+  line-height: 23px;
+  border-radius: 50%;
+}
+
+.facebook:hover {
+  background-color: #3b5998;
+  color: #fff;
+}
+
+.twitter:hover {
+  background-color: #4099FF;
+}
+
+
+.linkedin p i {
+  left: 20px;
+}
+
+
+.linkedin:hover {
+  background-color: #0976B4;
+}
