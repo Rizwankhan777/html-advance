@@ -1,0 +1,24 @@
+.customFileReplyClass:before {
+    content: '';
+    background: url(../images/filebefore.PNG);
+    background-size: cover;
+    width: 80px;
+    display: block;
+    margin: 0;
+    text-align: center;
+    height: -webkit-fill-available;
+    color: #fff;
+    border-radius: 3px;
+    position: absolute;
+}
+
+input.qazxswedc123:after {
+    content: 'Browse';
+    display: block;
+    color: #000;
+    left: 100px;
+    top: 5px;
+    position: absolute;
+    background: #fff;
+    width: 25%;
+}
