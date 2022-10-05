@@ -1,3 +1,6 @@
+
+<input type="file" />
+
 .customFileReplyClass:before {
     content: '';
     background: url(../images/filebefore.PNG);
