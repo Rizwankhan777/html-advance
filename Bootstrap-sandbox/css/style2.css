@@ -1,0 +1,9 @@
+.navbar-brand.w-100 img {
+    height: auto;
+    width: 200px;
+}
+footer.bg-navy.text-inverse .widget img.mb-4 {
+    height: auto;
+    width: 200px;
+    filter: invert(1);
+}
