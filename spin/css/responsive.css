@@ -1,0 +1,18 @@
+/* @media only screen and  (max-width: 1200px) {  } */
+
+@media only screen and (max-width:1160px)   {  }
+
+@media only screen and (max-width:991px){
+  /*RESPONSIVE NAVIGATION*/
+  .mobile-menu{
+    display: block;
+  }
+  /*RESPONSIVE NAVIGATION*/
+}
+
+@media only screen and  (max-width: 768px)  {  }
+
+@media only screen and  (max-width: 576px)  {  }
+
+@media only screen and  (max-width: 375px)  {  }
+

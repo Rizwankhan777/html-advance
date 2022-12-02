@@ -1,0 +1,436 @@
+h1, h2, h3, h4, h5, h6, p, span, ul, li, a, .btn-default, textarea {
+	margin: 0;
+	padding: 0;
+}
+* {
+	margin: 0;
+	padding: 0;
+}
+a:hover {
+	text-decoration: none;
+}
+a:focus {
+	text-decoration: none;
+}
+body {
+
+}
+
+/* .container{
+	max-width: 1175px;
+} */
+
+/* ************************************ */
+/*RESPONSIVE NAVIGATION*/
+.mobile-menu{
+   display: none;
+ }
+ .mobile-menu .circle {
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  color: #fff;
+  border-radius: 50%;
+  background: #005879;
+  margin: 0 auto;
+  font-size: 16px;
+  position: fixed;
+  right: 40px;
+  top: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+}
+.mobile-menu .mobile-cross {
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  color: #fff;
+  border-radius: 50%;
+  background: #005879;
+  margin: 0 auto;
+  font-size: 16px;
+  position: fixed;
+  right: 0px;
+  top: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 99999;
+}
+.mobile-menu .nveMenu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 280px;
+  height: 100%;
+  background: #fff;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 999;
+  transform: translateX(-320px);
+  transition: all 0.5s cubic-bezier(0.7, 0, 0.3, 1);
+  padding: 40px 20px;
+}
+.mobile-menu .nveMenu.is-opened {
+  opacity: 1;
+  visibility: visible;
+  transform: translateX(0);
+}
+/*.mobile-menu .nveMenu h1 {
+  color: #000;
+  font-weight: 700;
+  }*/
+  .mobile-menu .overlay {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: calc(100% - 280px);
+    height: 100%;
+    background: rgba(0, 0, 0, 0.71);
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.5s cubic-bezier(0.7, 0, 0.3, 1);
+  }
+  .mobile-menu .overlay.is-on {
+    opacity: 1;
+    visibility: visible;
+    z-index: 999;
+  }
+  .mobile-menu .navlinks li {
+    display: block;
+    padding: 12px 0;
+  }
+  .mobile-menu .navlinks li a {
+    text-transform: uppercase;
+    color: #666;
+    font-weight: 700;
+  }
+  .mobile-menu .navlinks li a:hover {
+    text-decoration: none;
+  }
+/*RESPONSIVE NAVIGATION*/
+
+/* PRELOADER START */
+.preloader {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+  background-image: url('../images/preloader.gif');
+  background-repeat: no-repeat;
+  background-color: #FFF;
+  background-position: center;
+}
+/* PRELOADER END */
+.active-class{
+  border: 2px solid #000;
+}
+/* ************************************ */
+
+
+
+header .extra-desc button:hover{
+    background-color: #fc0;
+    
+}
+
+header .extra-desc .banner:hover{
+    background-color: #007aff;
+    
+}
+.book-head {
+    padding: 200px 0px;
+}
+
+.design-together .book-head h1{
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+.design-together .book-head p{
+    font-weight: 400;
+    font-size: 18px;
+    margin-bottom: 40px;
+}
+.design-together .book-head button{
+    padding: 15px 25px;
+    border-radius: 0px;
+}
+.design-together .best-show img{
+    width: 100%;
+    padding: 40px 0px;
+}
+
+.design-together .brand1{
+    padding-bottom: 80px;
+}
+
+
+/* create-creativity start */
+.create-creativity{
+    background-image: url('../images/cu.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-size: cover;
+}
+
+.create-creativity h1{font-size: 80px;margin-bottom: 70px;padding: 0px 0px;}
+.create-creativity .bluster-project img{
+    width: 45%;
+    margin-bottom: 25px;
+}
+.create-creativity .bluster-project p{
+    font-size: 14px;
+    width: 95%;
+    text-align: justify;
+}
+.bluster-project .fear-mail img{
+    width: 12%;
+    border-radius: 25px;
+}
+.bluster-project .cup-bag h6{
+    font-size: 14px;
+    line-height: 10px;
+    font-weight: 800;
+}
+
+.bluster-project .cup-bag p{
+    font-size: 12px;
+    font-weight: 600;
+    color: grey;
+}
+
+.bluster-project{
+    position: relative;
+    /* background: #e6f2ff linear-gradient(60deg, rgb(255 255 255 / 70%) 0,rgb(255 255 255 / 70%) 35%,rgb(255 255 255 / 70%) 100%); */
+    /* box-shadow: 1px -1px 11px 0px rgb(191 181 181); */
+    /* padding: 0px; */
+}
+.bluster-project .fear-mail{
+    position: absolute;
+    top: 122px;
+    right: 60;
+}
+.bluster-project .cup-bag{
+    position: absolute;
+    /* right: 0px; */
+    left: 60px;
+    top: 133px;
+}
+.create-creativity .idea-system{
+    padding: 20px 0px;
+}
+.create-creativity .idea-system h5{font-size: 18px;font-weight: 700;}
+
+.create-creativity .idea-system p{
+    font-size: 14px;
+}
+/* --------------ends------------- */
+
+
+
+/* create-creativity start */
+.create-creativity2{
+    background-image: url('../images/rr.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-size: cover;
+    padding-top: 140px;
+}
+
+.create-creativity2 h1{font-size: 80px;margin-bottom: 70px;padding: 0px 0px;}
+.create-creativity2 .bluster-project img{
+    width: 30%;
+    margin-bottom: 25px;
+}
+.create-creativity2 .bluster-project p{
+    font-size: 14px;
+}
+.bluster-project .fear-mail img{
+    width: 12%;
+    border-radius: 25px;
+}
+.bluster-project .cup-bag h6{
+    font-size: 14px;
+    line-height: 10px;
+    font-weight: 800;
+}
+
+.bluster-project .cup-bag p{
+    font-size: 12px;
+    font-weight: 600;
+    color: grey;
+}
+.bluster-project{
+    /* position: relative; */
+}
+.bluster-project .fear-mail{
+    position: absolute;
+    top: 122px;
+    right: 60;
+}
+.bluster-project .cup-bag{
+    position: absolute;
+    /* right: 0px; */
+    left: 60px;
+    top: 133px;
+}
+.create-creativity2 .idea-system{
+    padding: 20px 0px;
+}
+.create-creativity2 .idea-system h5{font-size: 18px;font-weight: 700;}
+
+.create-creativity2 .idea-system p{
+    font-size: 14px;
+}
+/* --------------ends------------- */
+
+
+
+
+
+
+
+/* create-creativity start */
+.create-creativity3{
+    background-image: url('../images/pink.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-size: cover;
+    padding-top: 140px;
+}
+
+.create-creativity3 h1{font-size: 80px;margin-bottom: 70px;padding: 0px 0px;}
+.create-creativity3 .bluster-project img{
+    width: 30%;
+    margin-bottom: 25px;
+}
+.create-creativity3 .bluster-project p{
+    font-size: 14px;
+}
+.bluster-project .fear-mail img{
+    width: 12%;
+    border-radius: 25px;
+}
+.bluster-project .cup-bag h6{
+    font-size: 14px;
+    line-height: 10px;
+    font-weight: 800;
+}
+
+.bluster-project .cup-bag p{
+    font-size: 12px;
+    font-weight: 600;
+    color: grey;
+}
+.bluster-project{
+    /* position: relative; */
+}
+.bluster-project .fear-mail{
+    position: absolute;
+    top: 122px;
+    right: 60;
+}
+.bluster-project .cup-bag{
+    position: absolute;
+    /* right: 0px; */
+    left: 60px;
+    top: 133px;
+}
+.create-creativity3 .idea-system{
+    padding: 20px 0px;
+}
+.create-creativity3 .idea-system h5{font-size: 18px;font-weight: 700;}
+
+.create-creativity3 .idea-system p{
+    font-size: 14px;
+}
+/* --------------ends------------- */
+
+
+
+/* knowledge-team start */
+
+.knowledge-team .scale p{
+    font-size: 18px;
+    font-weight: 400;
+    color: grey;
+    padding-top: 100px;
+}
+.knowledge-team .scale h1{
+    font-size: 60px;
+    font-weight: 700;
+}
+.knowledge-team .scale h6{
+    font-size: 24px;
+    font-weight: 400;
+    margin-bottom: 40px;
+}
+.base-desc{
+ background:  #e6f2ff linear-gradient(60deg, rgba(230,242,255,.7) 0,rgba(230,242,255,.7) 35%,rgba(242,242,251,.7) 100%);
+ padding: 30px;
+ width: 131%;
+}
+.knowledge-team .base-desc img{
+    width: 20%;
+}
+.knowledge-team .base-desc h5{
+    font-size: 28px;
+    font-weight: 700;
+}
+.knowledge-team .base-desc p{
+    font-size: 22px;
+}
+
+/* /////////////////////// */
+.poms{
+    padding: 50px 1px;
+}
+.bluster-project2{
+    background: #e6f2ff;
+    box-shadow: 1px 2px 20px 20px #a5a5a5;
+    padding: 35px;
+    position: relative;
+}
+
+.poms .bluster-project2 img{
+    width: 30%;
+    margin-bottom: 20px;
+}
+.poms .bluster-project2 p{
+    font-size: 16px;
+}
+
+.poms .desc h5{
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.poms .desc img{
+    width: 15%;
+    border-radius: 30px;
+}
+.d-flex.mydiv {
+    display: flex;
+    justify-content: flex-start;
+    padding: 9px 0;
+    align-items: center !important;
+}
+
+.fear-mail img {
+    width: 70px;
+    border-radius: 50%;
+}
+.fear-mail {
+    padding-right: 15px;
+}
+
+.main-div {
+    padding: 20px 15px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border-radius: 10px;
+}
