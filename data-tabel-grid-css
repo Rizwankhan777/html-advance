@@ -1,0 +1,19 @@
+ table#example tr {
+         display: inline-block; width: 25%;}
+         table#example td
+          { white-space: unset !important;
+        background-color: transparent !important;
+        border: none;
+        }
+          table#example tr .col.span_4 {
+            margin-bottom: 0px !important;}
+            table#example td .single_product.test {
+            height: auto !important;}
+            table#example h4 { 
+            text-align: center;}
+            .main_sec_2 h4:before {
+                    top: 106px !important;}
+                    table#example .single_product h3.price { 
+                    text-align: center;}
+                    table#example tr td .col.span_4 { 
+                        width: 100%;}
