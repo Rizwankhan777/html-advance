@@ -1,0 +1,327 @@
+mobile mega menu header
+//js
+
+
+const openMenu = document.getElementById("openMenu");
+const closeMenu = document.getElementById("closeMenu");
+const navMenu = document.querySelector(".nveMenu");
+const overlay = document.querySelector(".overlay");
+
+// open menu
+openMenu.addEventListener("click", () => {
+	navMenu.classList.add("open");
+	overlay.classList.add("show");
+  
+});
+
+// close menu
+closeMenu.addEventListener("click", () => {
+	navMenu.classList.remove("open");
+	overlay.classList.remove("show");
+});
+
+// submenu open
+document.querySelectorAll(".menu-item-has-children > a").forEach(item => {
+	item.addEventListener("click", () => {
+		item.nextElementSibling.classList.add("open");
+	});
+});
+
+// back button
+document.querySelectorAll(".back-btn").forEach(back => {
+	back.addEventListener("click", () => {
+		back.parentElement.parentElement.classList.remove("open");
+	});
+});
+
+
+
+//css
+
+.mobile-menu img{
+    width:150px;
+    height:70px;
+}
+
+.mobile-menu{
+   display: none;
+ }
+ .mobile-menu .circle {
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  color: #044fb1;
+  border-radius: 50%;
+  background: #ffffff;
+  /* margin: 0 auto; */
+  font-size: 16px;
+  /* position: fixed; */
+  right: 40px;
+  top: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+}
+/* .mobile-menu .mobile-cross {
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  color: #fff;
+  border-radius: 50%;
+  background: #55b7d5;
+  margin: 0 auto;
+  font-size: 16px;
+  position: fixed;
+  right: 12px;
+  top: 13px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 99999;
+}
+.mobile-menu .nveMenu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 280px;
+  height: 100%;
+  background: #fff;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 999;
+  transform: translateX(-320px);
+  transition: all 0.5s cubic-bezier(0.7, 0, 0.3, 1);
+  padding: 40px 20px;
+}
+.mobile-menu .nveMenu.is-opened {
+  opacity: 1;
+  visibility: visible;
+  transform: translateX(0);
+} */
+/*.mobile-menu .nveMenu h1 {
+  color: #000;
+  font-weight: 700;
+  }*/
+  /* .mobile-menu .overlay {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: calc(100% - 280px);
+    height: 100%;
+    background: rgba(0, 0, 0, 0.71);
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.5s cubic-bezier(0.7, 0, 0.3, 1);
+  }
+  .mobile-menu .overlay.is-on {
+    opacity: 1;
+    visibility: visible;
+    z-index: 999;
+  }
+  .mobile-menu .navlinks li {
+    display: block;
+    padding: 12px 0;
+  }
+  .mobile-menu .navlinks li a {
+    text-transform: uppercase;
+    color: #666;
+    font-weight: 700;
+  }
+  .mobile-menu .navlinks li a:hover {
+    text-decoration: none;
+  } */
+/*RESPONSIVE NAVIGATION*/
+
+//add this for multi step side
+
+	.nveMenu {
+	position: fixed;
+	top: 0;
+	right: -100%;
+	width: 80%;
+	height: 100vh;
+	background: #fff;
+	z-index: 9999;
+	transition: 0.3s ease;
+	padding: 20px;
+	overflow-y: auto;
+}
+
+.nveMenu.open {
+	right: 0;
+}
+
+.overlay {
+	position: fixed;
+	top: 0; left: 0;
+	height: 100vh;
+	width: 100%;
+	background: rgba(0,0,0,0.6);
+	z-index: 999;
+	display: none;
+}
+
+.overlay.show {
+	display: block;
+}
+
+.main-menu li {
+	padding: 12px 0;
+	list-style: none;
+}
+
+.menu-item-has-children > a {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.sub-menu {
+	position: absolute;
+	top: 0;
+	right: -100%;
+	width: 100%;
+	height: 100%;
+	background: #fff;
+	padding: 20px;
+	transition: 0.3s ease;
+}
+
+.sub-menu.open {
+	right: 0;
+}
+
+.back-btn {
+	background: none;
+	border: none;
+	font-size: 16px;
+	padding: 10px 0;
+	display: flex;
+	align-items: center;
+	cursor: pointer;
+}
+
+//html
+
+//mobile header
+<div class="mobile-menu">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12 p-0">
+						<p class="text-center pt-2 border-bottom">
+							<a href="tel:+923408396866">Call Us: +92 340-8396866</a>
+						</p>
+						<div class="mobile-top">
+							<div class="img-div">
+								<img src="./images/enzay1.png" class="img-fluid" alt="">
+							</div>
+							<div class="circle" id="openMenu"><i class="fa fa-bars" aria-hidden="true"></i></div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="nveMenu text-left">
+				<div class="mobile-cross close-btn-nav" id="closeMenu"><i class="fas fa-times"></i></div>
+				<div>
+					<a href="index.php"><img src="./images/enzay1.png" class="img-fluid"></a>
+				</div>
+
+				<ul class="navlinks p-0 mt-4 main-menu">
+					<li><a href="#home">Home</a></li>
+					<li><a href="#about_us">About Us</a></li>
+
+					<li class="menu-item-has-children">
+						<a href="javascript:void(0)">Services <i class="fa fa-angle-right"></i></a>
+
+						<ul class="sub-menu">
+							<li><button class="back-btn"><i class="fa fa-angle-left"></i> Back</button></li>
+							<li><a href="#">Web Development</a></li>
+							<li><a href="#">Brand Identity</a></li>
+							<li class="menu-item-has-children">
+								<a href="javascript:void(0)">Marketing <i class="fa fa-angle-right"></i></a>
+								<ul class="sub-menu">
+									<li><button class="back-btn"><i class="fa fa-angle-left"></i> Back</button></li>
+									<li><a href="#">Social Media</a></li>
+									<li><a href="#">Paid Ads</a></li>
+								</ul>
+							</li>
+						</ul>
+
+					</li>
+
+					<li><a href="#portfolio">Portfolio</a></li>
+					<li><a href="#">Contact Us</a></li>
+				</ul>
+			</div>
+
+			<div class="overlay"></div>
+		</div>
+
+
+//desktop header
+
+<div class="desktop-header" id="home">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-2">
+						<div class="img_div">
+							<img src="./images/enzay1.png" class="img-fluid" alt="">
+						</div>
+					</div>
+					<div class="col-md-7">
+						<ul>
+							<li><a href="#home" class="active">Home</a></li>
+							<li><a href="#about_us">About Us</a></li>
+							<li><a href="#services">Services</a></li>
+							<li><a href="#portfolio">Portfolio</a></li>
+							<li><a href="#contact_us">Contact Us</a></li>
+						</ul>
+					</div>
+					<div class="col-md-3 text-right">
+						<div class="contact_btn">
+							<a href="callto:03408396866"><i class="icon fa fa-phone"></i> +92 340-8396866</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+//desktop header css
+
+
+.desktop-header{
+  background: rgb(2,156,187);
+  background: linear-gradient(90deg, rgb(66 180 214) 39%, rgb(3 77 176) 100%);
+  padding: 4px 0;
+  border-bottom: 4px solid #ffffff;
+}
+.desktop-header ul {
+  display: flex;
+  justify-content: center;
+  padding: 18px 0 10px;
+}
+.desktop-header ul li{
+  list-style:  none;
+  padding: 0 20px;
+}
+
+.desktop-header ul li a{
+  text-decoration: none;
+  color: #fff;
+  font-weight: 500;
+  padding: 3px 0px;
+  font-size: 16px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.desktop-header img{
+  width: 175px;
+  height: 75px;
+}
+
+
+
